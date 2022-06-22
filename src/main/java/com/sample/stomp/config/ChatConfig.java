@@ -26,7 +26,7 @@ public class ChatConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void configureWebSocketTransport(WebSocketTransportRegistration registry) {
-        registry.setMessageSizeLimit(512 * 1024 * 1024);
-        registry.setSendBufferSizeLimit(512 * 1024 * 1024);
+        registry.setMessageSizeLimit(5 * 1024 * 1024);
+        registry.setSendBufferSizeLimit(5 * 1024 * 1024);
     }
 }
